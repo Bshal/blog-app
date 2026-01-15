@@ -118,7 +118,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 git clone <repository-url>
-cd tech-exactly
+cd blog-app
 ```
 
 ### Step 2: Backend Setup
@@ -126,8 +126,10 @@ cd tech-exactly
 ```bash
 cd backend
 
-# Install dependencies
+# Install dependencies (using npm or yarn)
 npm install
+# or
+yarn install
 
 # Create .env file (copy from .env.example if available)
 # See Environment Setup section for required variables
@@ -156,9 +158,9 @@ PORT=5000
 NODE_ENV=development
 
 # Database
-MONGODB_URI=mongodb://localhost:27017/tech-exactly
+MONGODB_URI=mongodb://localhost:27017/blog-app
 # Or use MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/tech-exactly
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/blog-app
 
 # JWT Configuration
 JWT_ACCESS_SECRET=your-super-secret-access-token-key-min-32-chars
@@ -219,6 +221,8 @@ To enable OAuth login:
 ```bash
 cd backend
 npm run dev
+# or
+yarn dev
 ```
 Backend API will be available at `http://localhost:5000`
 
@@ -236,6 +240,9 @@ Frontend application will be available at `http://localhost:3000`
 cd backend
 npm run build
 npm start
+# or
+yarn build
+yarn start
 ```
 
 **Build and Start Frontend:**
@@ -256,6 +263,8 @@ To populate the database with sample users, posts, and comments:
 ```bash
 cd backend
 npm run seed
+# or
+yarn seed
 ```
 
 This will create:
@@ -283,6 +292,8 @@ To create an admin user, you can use the script:
 ```bash
 cd backend
 npm run create-admin
+# or
+yarn create-admin
 ```
 
 Or use the admin panel (if logged in as admin) at `/admin/create-admin`
@@ -499,12 +510,18 @@ cd backend
 
 # Run all tests
 npm test
+# or
+yarn test
 
 # Run tests in watch mode
 npm run test:watch
+# or
+yarn test:watch
 
 # Generate coverage report
 npm run test:coverage
+# or
+yarn test:coverage
 ```
 
 ### Test Coverage
@@ -521,7 +538,7 @@ For detailed testing documentation, see [Backend Tests README](./backend/tests/R
 ## 📁 Project Structure
 
 ```
-tech-exactly/
+blog-app/
 ├── backend/                    # Express.js API server
 │   ├── src/
 │   │   ├── config/             # Configuration files
@@ -650,6 +667,8 @@ tech-exactly/
 ## 📝 Available Scripts
 
 ### Backend Scripts
+
+**Using npm:**
 ```bash
 npm run dev          # Start development server with hot reload
 npm run build        # Build for production
@@ -660,6 +679,19 @@ npm run test:coverage # Generate test coverage report
 npm run seed         # Seed database with sample data
 npm run create-admin # Create admin user
 npm run lint         # Run ESLint
+```
+
+**Using yarn:**
+```bash
+yarn dev             # Start development server with hot reload
+yarn build           # Build for production
+yarn start           # Start production server
+yarn test            # Run all tests
+yarn test:watch      # Run tests in watch mode
+yarn test:coverage   # Generate test coverage report
+yarn seed            # Seed database with sample data
+yarn create-admin    # Create admin user
+yarn lint            # Run ESLint
 ```
 
 ### Frontend Scripts
