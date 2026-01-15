@@ -11,7 +11,7 @@
 
 **A full-stack blog application built with MongoDB, Express.js, Next.js v16, and Node.js**
 
-[Features](#-features) • [Installation](#-installation) • [API Documentation](#-api-documentation) • [Demo](#-demo)
+[Features](#-features) • [Installation](#-installation) • [API Documentation](#-api-documentation)
 
 </div>
 
