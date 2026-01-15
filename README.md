@@ -702,52 +702,7 @@ npm start            # Start production server
 npm run lint         # Run ESLint
 ```
 
----
 
-## 🎬 Demo Video
-
-A **5-10 minute demo video** showcasing the application is available. The video demonstrates:
-
-- ✅ **Application Flow** - User registration, login, and navigation
-- ✅ **Post Management** - Creating, editing, and deleting posts
-- ✅ **Comment System** - Adding and managing comments
-- ✅ **Admin Panel** - Dashboard statistics and user/post/comment management
-- ✅ **Key Features** - OAuth login, role-based access, responsive design
-
-> **Note:** The demo video should be uploaded separately or linked in the repository description.
-
----
-
-## 🤝 Contributing
-
-This is a job assignment project. For contributions:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is part of a job assignment and is not licensed for commercial use.
-
----
-
-## 📞 Support
-
-For questions or issues:
-- Check the [Backend README](./backend/README.md) for backend-specific documentation
-- Check the [Frontend README](./frontend/README.md) for frontend-specific documentation
-- Review the [Testing Documentation](./backend/tests/README.md) for test-related questions
-
----
-
-<div align="center">
-
-**Built with ❤️ using the MERN Stack**
 
 [⬆ Back to Top](#mern-stack-blog-application)
 
